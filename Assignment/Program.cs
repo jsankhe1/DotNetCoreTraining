@@ -8,7 +8,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World! Let's see Jay's Assignment Solutions!");
+
+
+        Console.WriteLine($"Hello, World! Let's see Jay's Assignment Solutions!");
         AssignmentOneDashboard assignmentOneDashboard = new AssignmentOneDashboard();
         assignmentOneDashboard.Run();
     }

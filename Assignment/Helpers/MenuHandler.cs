@@ -55,8 +55,16 @@ public class MenuHandler
                 Pyramid.printPyramid();
                 break;
             case AssignmentTasks.DaysOld:
-                var daysOld = new DaysOldCalculator();
-                daysOld.DaysOldPrinter();
+                var DaysOld = new DaysOldCalculator();
+                DaysOld.DaysOldPrinter();
+                break;
+            case AssignmentTasks.Greting:
+                var Greeting = new GreetMeNow();
+                Greeting.GreetUser();
+                break;
+            case AssignmentTasks.Incrementer:
+                var Incrementer = new IncrementPrinter();
+                Incrementer.PrintIncrements();
                 break;
             
             default: break;

@@ -225,6 +225,12 @@ Create a program to print the following pattern:
 - "Good Afternoon"
 - "Good Evening"
 - "Good Night"
+  It's up to you which times should serve as the starting and ending ranges for each of the
+  greetings. If you need a refresher on how to get the current time, see Date Time
+  Formatting. When testing your program, you'll probably want to use a DateTime variable
+  you define, rather than the current time. Once you're confident the program works
+  correctly, you can substitute DateTime.Now for your variable (or keep your variable and just
+  assign DateTime.Now as its value, which is often a better approach).
 
 7. **Counting Increments:**  
    Create a program using nested loops to count up to 24 with increments of 1, 2, 3, and 4.  

@@ -9,5 +9,7 @@ public enum AssignmentTasks
     FizzBuzzSimulator,
     GuessingGame,
     PrintPyramid,
-    DaysOld
+    DaysOld,
+    Greting,
+    Incrementer
 }
