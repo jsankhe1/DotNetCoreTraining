@@ -5,5 +5,9 @@ public enum AssignmentTasks
     Exit = 0,
     HackerNameGenerator,
     NumberTypesInfo,
-    CenturyConverter
+    CenturyConverter,
+    FizzBuzzSimulator,
+    GuessingGame,
+    PrintPyramid,
+    DaysOld
 }

@@ -165,22 +165,59 @@
    ```
 
      Analyze the output and add code to warn about the problem without changing the existing code.
+   >Without changing anything the code won't even compile as WriteLine isn't a method, it has to be used with Console dot notation.
+   > 
+   > Assuming it's a typo in question, running it with Console.WriteLine() will result in an infinite loop, as the byte is an unsigned numeric data type which holds max value till 255.
+   > 
+   > It resets back to 0 and keeps going, infinite loop until keyboard interrupt is done.
+   > 
+   >Change to code  below
+   ```csharp
+   static void Main()
+   {
+   int max = 500;
+
+        Console.WriteLine("Warning: The variable 'i' is byte, itss max is 255, itwill overflow. Do you want to continue? Y or N");
+        string choice = Console.ReadLine();
+        if (choice == "Y")
+        {
+    
+            
+        for (byte i = 0; i < max; i++)
+        {
+            Console.WriteLine(i);
+            if(i == byte.MaxValue) {
+            }
+
+    
+        }
+        }
+
+   }
+   ```
 
 3. Guessing Game:
 Write a program that generates a random number between 1 and 3 and allows the user to guess it. Provide hints if the guess is high, low, or correct.
 
 4. Print-a-Pyramid:
 Create a program to print the following pattern:
-    ```
+```
     *
-    ***
-    *****
-    *******
-    *********
-    ```  
+   ***
+  *****
+ *******
+*********
+
+```
+
+
 
 5. **Age in Days and Milestones:**  
-   Write a program that calculates how many days have passed since a given birth date. Additionally, calculate the date of the next 10,000-day milestone.
+   Write a simple program that defines a variable representing a birth date and calculates
+   how many days old the person with that birth date is currently.
+   For extra credit, output the date of their next 10,000 day (about 27 years) anniversary.
+   Note: once you figure out their age in days, you can calculate the days until the next
+   anniversary using int daysToNextAnniversary = 10000 - (days % 10000); •
 
 6. **Time-Based Greetings:**  
    Write a program to greet the user with appropriate messages based on the time of day:

@@ -1,4 +1,5 @@
 using Assignment.MiniAssignment1;
+using Assignment.MiniAssignment2;
 
 namespace Assignment.Helpers;
 
@@ -11,6 +12,13 @@ public class MenuHandler
         Console.WriteLine("1. Hacker Name Generator");
         Console.WriteLine("2. Number Types Information");
         Console.WriteLine("3. Century Converter");
+        Console.WriteLine("4. FizzBuzz Simulation");
+        Console.WriteLine("5. Guessing Game");
+        Console.WriteLine("6. Print Pyramid");
+        Console.WriteLine("7. DaysOld Calculator");
+        Console.WriteLine("8. DayRoutine");
+        Console.WriteLine("9. Increment Counts");
+        
         Console.WriteLine("========================");
         Console.Write("Enter your choice: ");
     }
@@ -33,6 +41,22 @@ public class MenuHandler
             case AssignmentTasks.CenturyConverter:
                 var centuryCoverter = new CenturyConverter();
                 centuryCoverter.PrintConvertCenturies();
+                break;
+            case AssignmentTasks.FizzBuzzSimulator:
+                var fizzBuzzSimulator = new Excercise3FizzBuzzSimulation();
+                fizzBuzzSimulator.printFizzBuzz();
+                break;
+            case AssignmentTasks.GuessingGame:
+                var guessingClient = new GuessingGame();
+                guessingClient.PlayGame();
+                break;
+            case AssignmentTasks.PrintPyramid:
+                var Pyramid = new PyramidPattern();
+                Pyramid.printPyramid();
+                break;
+            case AssignmentTasks.DaysOld:
+                var daysOld = new DaysOldCalculator();
+                daysOld.DaysOldPrinter();
                 break;
             
             default: break;
