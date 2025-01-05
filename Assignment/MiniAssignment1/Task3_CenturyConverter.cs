@@ -25,6 +25,11 @@ public class CenturyConverter
     {
         Console.WriteLine("Enter the number of centuries to see conversion scale: ");
         Century = Convert.ToInt32(Console.ReadLine());
+        if (Century <= 0)
+        {
+            Console.WriteLine("Please provide a positive value, you're going back to menu :)");
+            return;
+        }
         // Conversion factors
         int yearsInCentury = 100;
         double daysInYear = 365.25; // Accounting for leap years

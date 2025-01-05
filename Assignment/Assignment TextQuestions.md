@@ -98,16 +98,54 @@
 
 ### Textual Questions
 1. What happens when you divide an `int` variable by 0?
-2. What happens when you divide a `double` variable by 0?
-3. What happens when you overflow an `int` variable, i.e., set it to a value beyond its range?
-4. What is the difference between `x = y++;` and `x = ++y;`?
-5. What is the difference between `break`, `continue`, and `return` when used inside a loop statement?
-6. What are the three parts of a `for` statement, and which of them are required?
-7. What is the difference between the `=` and `==` operators?
-8. Does the following statement compile? `for ( ; true; ) ;`
-9. What does the underscore `_` represent in a `switch` expression?
-10. What interface must an object implement to be enumerated over by using the `foreach` statement?
 
+         Compilation Error: System.DivideByZeroException: Attempted to divide by zero.
+
+2. What happens when you divide a `double` variable by 0?
+
+       Compiles succesfully : 
+       If printed, prints Infinity, if we attempt to substract any number from it, still is infinity.
+       If we attempt to substract itself from itself, will compile but return NaN(Not a Number)
+                     
+3. What happens when you overflow an `int` variable, i.e., set it to a value beyond its range?
+   
+       It overflows and sets to the min range of itself, a int overflowed by +1 will set to -2147483648
+4. What is the difference between `x = y++;` and `x = ++y;`?
+
+       ++x and x++ are pre-increment and post-increment operators respectively
+       y= ++x -> x is incremented first and then assigned to y
+       y = x++ -> x is assigned to y first, and then incremented
+5. What is the difference between `break`, `continue`, and `return` when used inside a loop statement?
+   > break will  exit out of the loop abd transfer control to the statment following the loop
+   > 
+   > continue will skip the remaining code in current iteration and move on to next iteration
+   > 
+   > return will exit out of the loop, and enclosing method and return control to caller of method
+
+6. What are the three parts of a `for` statement, and which of them are required?
+   > Three parts of for loop statements are:
+   > 
+   > **Initialization** This is where the control variable value is set at beginning of loop
+   > 
+   > **Condition** This part is a boolean expression that is evaluated at each start of iteration, if condition true, continue loop, else, terminate.
+   > 
+   > **Updation** This part is executed at the end of each iteration and is used to update the control variable
+   > 
+   > **All three parts are optional, but the semicolons sepearing the parts is required, without any parts and just semicolons, we will create an infinite loop**
+   > 
+   >
+
+7. What is the difference between the `=` and `==` operators?
+   > '=' is a assignment operator, it assigns the value on the right side to the variable on the left side.
+   > 
+   >'==' is a equality  operator, it cheks  if values on both sides  are equal and returns a boolean result i.e true or false.
+
+8. Does the following statement compile? `for ( ; true; ) ;`
+   > Yes, it starts a infinite loop, need to escape it from terminal with a ctrl + c.
+9. What does the underscore `_` represent in a `switch` expression?
+   > It represents the default case.
+10. What interface must an object implement to be enumerated over by using the `foreach` statement?
+   > IEnumerable interface must be implemented by the object.
 ---
 
 ### Coding Questions
