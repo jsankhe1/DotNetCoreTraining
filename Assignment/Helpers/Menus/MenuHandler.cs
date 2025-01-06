@@ -164,16 +164,19 @@ public class MenuHandler
 
                 break;
             case AssignmentTwoTasks.ReverseWords:
+                Console.WriteLine("To be Implemented, thanks for your patience :D");
 
                 break;
             
 
             case AssignmentTwoTasks.ExtractPalindrome:
-                
+                var taskTen = new TaskTenPalindromeCheck();
+                taskTen.DemoExtractPalindromes();
                 break;
             
             case AssignmentTwoTasks.UrlParser:
-
+                var taskEleven = new TaskElevenUrlParser();
+                taskEleven.DemoUrlParser();
                 break;
             default: break;
         }
