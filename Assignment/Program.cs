@@ -11,7 +11,7 @@ class Program
 
 
         Console.WriteLine($"Hello, World! Let's see Jay's Assignment Solutions!");
-        AssignmentOneDashboard assignmentOneDashboard = new AssignmentOneDashboard();
-        assignmentOneDashboard.Run();
+        PrimeDashboard primeDashboard = new PrimeDashboard();
+        primeDashboard.Run();
     }
 }

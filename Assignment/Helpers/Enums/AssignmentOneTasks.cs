@@ -1,6 +1,6 @@
 namespace Assignment;
 
-public enum AssignmentTasks
+public enum AssignmentOneTasks
 {
     Exit = 0,
     HackerNameGenerator,
