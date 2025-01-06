@@ -110,12 +110,7 @@ Use two nested loops:
 - Inner loop for array indices: `i = 0 ... n-1`.
 
 #### Example:
-
-| Input                  | Output       | Comments                     |
-|------------------------|--------------|------------------------------|
-| `3 2 4 -1` and `2`     | `3 2 5 6`    | Rotate and sum the arrays    |
-| `1 2 3 4 5` and `3`    | `12 10 8 6 9`| Rotated arrays and sum       |
-
+![alt text](image.png)
 ---
 
 ### 5. Longest Sequence of Equal Elements

@@ -42,8 +42,14 @@ public class MenuHandler
         Console.WriteLine("0. Return to Main Menu");
         Console.WriteLine("1. Array Copy");
         Console.WriteLine("2. List Management");
-
-        
+        Console.WriteLine("3. Prime Print");
+        Console.WriteLine("4. Rotate and Sum");
+        Console.WriteLine("5. Longest Sequence Equal");
+        Console.WriteLine("6. Most Frequent Number");
+        Console.WriteLine("7. Reverse a String");
+        Console.WriteLine("8. Reverse Words");
+        Console.WriteLine("9. Extract Palindrome");
+        Console.WriteLine("10. URL Parser");
         Console.WriteLine("========================");
         Console.Write("Enter your choice: ");
     }
@@ -131,7 +137,44 @@ public class MenuHandler
                 var taskTwo = new TaskTwoListManagement();
                 taskTwo.DemoList();
                 break;
+            case AssignmentTwoTasks.PrimePrint:
+                var taskThree = new TaskThreePrimeNumbersRange();
+                taskThree.PrimeNumberPrinter();
+                break;
+            case AssignmentTwoTasks.RotateAndSum:
+                var taskFour = new TaskFourRotateAndSum();
+                taskFour.DemoRotateAndSumArrays();
+                break;
+            case AssignmentTwoTasks.LongestSequenceEqual:
+                var taskFive = new TaskFiveLongestEqualSequence();
+                taskFive.DemoLongestSequenceOfEqualElements();
 
+                break;
+
+            case AssignmentTwoTasks.MostFreqNum:
+                var taskSeven = new TaskSevenMostFrequentNumber();
+                taskSeven.DemoMostFrequentNumber();
+
+                break;
+
+                        
+            case AssignmentTwoTasks.ReverseAString:
+                var taskEight = new TaskEightReverseString();
+                taskEight.DemoReverseString();;
+
+                break;
+            case AssignmentTwoTasks.ReverseWords:
+
+                break;
+            
+
+            case AssignmentTwoTasks.ExtractPalindrome:
+                
+                break;
+            
+            case AssignmentTwoTasks.UrlParser:
+
+                break;
             default: break;
         }
     }

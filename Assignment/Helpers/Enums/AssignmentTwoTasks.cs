@@ -5,6 +5,14 @@ public enum AssignmentTwoTasks
 
     Exit = 0,
     ArrayCopy,
-    ListManagement
+    ListManagement,
+    PrimePrint,
+    RotateAndSum,
+    LongestSequenceEqual,
+    MostFreqNum,
+    ReverseAString,
+    ReverseWords,
+    ExtractPalindrome,
+    UrlParser
 
 }
