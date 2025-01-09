@@ -52,7 +52,7 @@
 
 ---
 
-## Practice Arrays
+## Practice Arrays [Codeing Tasks]
 
 ### 1. Copying an Array
 Write code to create a copy of an array. First, start by creating an initial array. (You can use whatever type of data you want.) Let’s start with 10 items:
@@ -126,7 +126,7 @@ Write a program to find the longest sequence of equal elements in an array of in
 
 ---
 
-### 6. Most Frequent Number
+### 7. Most Frequent Number
 
 Write a program to find the most frequent number in a sequence. If multiple numbers have the same maximum frequency, print the **leftmost** one.
 
