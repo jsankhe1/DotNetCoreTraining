@@ -1,4 +1,7 @@
+using Assignment.AssignmentThree.Tasks;
 using Assignment.AssignmentTwo;
+using Assignment.Helpers.Dashboards;
+using Assignment.Helpers.Enums;
 using Assignment.MiniAssignment1;
 using Assignment.MiniAssignment2;
 
@@ -14,11 +17,12 @@ public class MenuHandler
         Console.WriteLine("0. Exit");
         Console.WriteLine("1. Assignment One Solutions");
         Console.WriteLine("2. Assignment Two Solutions");
+        Console.WriteLine("3. Assignment Three Solutions");
 
-        
         Console.WriteLine("========================");
         Console.Write("Enter your choice: ");
     }
+
     public static void DisplayMenuOne()
     {
         Console.WriteLine("\n=== Mini Assignment Menu ===");
@@ -32,10 +36,11 @@ public class MenuHandler
         Console.WriteLine("7. DaysOld Calculator");
         Console.WriteLine("8. DayRoutine");
         Console.WriteLine("9. Increment Counts");
-        
+
         Console.WriteLine("========================");
         Console.Write("Enter your choice: ");
     }
+
     public static void DisplayMenuTwo()
     {
         Console.WriteLine("\n=== Mini Assignment Menu ===");
@@ -54,6 +59,18 @@ public class MenuHandler
         Console.Write("Enter your choice: ");
     }
 
+    public static void DisplayMenuThree()
+    {
+        Console.WriteLine("\n=== Mini Assignment Menu ===");
+        Console.WriteLine("0. Return to Main Menu");
+        Console.WriteLine("1. Array Generate And Reverse");
+        Console.WriteLine("2. Fibionacci Sequence");
+        Console.WriteLine("3. Object Oriented Practice");
+        Console.WriteLine("4. Color and Ball Tort-eh-fun");
+        Console.WriteLine("========================");
+        Console.Write("Enter your choice: ");
+    }
+
     public static void MenuPrimeSelection(PrimeAssignment choice)
     {
         switch (choice)
@@ -64,15 +81,23 @@ public class MenuHandler
             case PrimeAssignment.AssignmentOne:
                 var assignmentOneDashboard = new AssignmentOneDashboard();
                 assignmentOneDashboard.Run();
-                
+
                 break;
-            
+
             case PrimeAssignment.AssignmentTwo:
                 var assignmentTwoDashboard = new AssignmentTwoDashboard();
                 assignmentTwoDashboard.Run();
                 break;
+            
+            case PrimeAssignment.AssignmentThree:
+                var assignmentThreeDashboard = new AssignmentThreeDashboard();
+                assignmentThreeDashboard.Run();
+                break;
+                
+            default: break;
         }
     }
+
     public static void MenuOneSelection(AssignmentOneTasks choice)
     {
         switch (choice)
@@ -116,7 +141,7 @@ public class MenuHandler
                 var Incrementer = new IncrementPrinter();
                 Incrementer.PrintIncrements();
                 break;
-            
+
             default: break;
         }
     }
@@ -157,23 +182,24 @@ public class MenuHandler
 
                 break;
 
-                        
+
             case AssignmentTwoTasks.ReverseAString:
                 var taskEight = new TaskEightReverseString();
-                taskEight.DemoReverseString();;
+                taskEight.DemoReverseString();
+                ;
 
                 break;
             case AssignmentTwoTasks.ReverseWords:
                 Console.WriteLine("To be Implemented, thanks for your patience :D");
 
                 break;
-            
+
 
             case AssignmentTwoTasks.ExtractPalindrome:
                 var taskTen = new TaskTenPalindromeCheck();
                 taskTen.DemoExtractPalindromes();
                 break;
-            
+
             case AssignmentTwoTasks.UrlParser:
                 var taskEleven = new TaskElevenUrlParser();
                 taskEleven.DemoUrlParser();
@@ -182,5 +208,32 @@ public class MenuHandler
         }
     }
 
-    
+    public static void MenuThreeSelection(AssignmentThreeTasks choice)
+    {
+        switch (choice)
+        {
+            case AssignmentThreeTasks.Exit:
+                Console.WriteLine("Exiting program...");
+                return;
+            case AssignmentThreeTasks.ArrayGenerationAndReversal:
+                var arrayGenRev = new OneArrayGenerationReversal();
+                arrayGenRev.Run();
+                break;
+            case AssignmentThreeTasks.FibonacciSequence:
+                var fibonacci = new TwoFibonacciSequence();
+                fibonacci.Run();
+                break;
+            case AssignmentThreeTasks.ObjectOrientedPractice:
+                // var oopPractice = new ObjectOrientedPractice();
+                // oopPractice.Run();
+                break;
+            case AssignmentThreeTasks.ColorAndBallTorture:
+                // var colorAndBall = new ColorAndBallTorture();
+                // colorAndBall.Run();
+                break;
+            default:
+                Console.WriteLine("Invalid choice or not implemented yet!");
+                break;
+        }
+    }
 }

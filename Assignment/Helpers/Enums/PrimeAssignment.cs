@@ -4,5 +4,6 @@ public enum PrimeAssignment
 {
     Exit = 0,
     AssignmentOne,
-    AssignmentTwo
+    AssignmentTwo,
+    AssignmentThree
 }

@@ -1,0 +1,15 @@
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/bin/Debug/net8.0/Assignment
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/bin/Debug/net8.0/Assignment.deps.json
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/bin/Debug/net8.0/Assignment.runtimeconfig.json
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/bin/Debug/net8.0/Assignment.dll
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/bin/Debug/net8.0/Assignment.pdb
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/obj/Debug/net8.0/Assignment.GeneratedMSBuildEditorConfig.editorconfig
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/obj/Debug/net8.0/Assignment.AssemblyInfoInputs.cache
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/obj/Debug/net8.0/Assignment.AssemblyInfo.cs
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/obj/Debug/net8.0/Assignment.csproj.CoreCompileInputs.cache
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/obj/Debug/net8.0/Assignment.sourcelink.json
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/obj/Debug/net8.0/Assignment.dll
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/obj/Debug/net8.0/refint/Assignment.dll
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/obj/Debug/net8.0/Assignment.pdb
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/obj/Debug/net8.0/Assignment.genruntimeconfig.cache
+/Users/psionicedge/RiderProjects/DotNetCoreTraining/Assignment/obj/Debug/net8.0/ref/Assignment.dll
