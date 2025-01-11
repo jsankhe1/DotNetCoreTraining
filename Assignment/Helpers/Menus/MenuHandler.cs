@@ -1,4 +1,5 @@
 using Assignment.AssignmentThree.Tasks;
+using Assignment.AssignmentThree.Tasks.TaskFour;
 using Assignment.AssignmentThree.Tasks.TaskThree;
 using Assignment.AssignmentTwo;
 using Assignment.Helpers.Dashboards;
@@ -229,8 +230,8 @@ public class MenuHandler
                 oopPractice.Run();
                 break;
             case AssignmentThreeTasks.ColorAndBallTorture:
-                // var colorAndBall = new ColorAndBallTorture();
-                // colorAndBall.Run();
+                var colorAndBall = new CBTask();
+                colorAndBall.Run();
                 break;
             default:
                 Console.WriteLine("Invalid choice or not implemented yet!");
