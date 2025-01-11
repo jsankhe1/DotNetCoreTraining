@@ -1,4 +1,5 @@
 using Assignment.AssignmentThree.Tasks;
+using Assignment.AssignmentThree.Tasks.TaskThree;
 using Assignment.AssignmentTwo;
 using Assignment.Helpers.Dashboards;
 using Assignment.Helpers.Enums;
@@ -224,8 +225,8 @@ public class MenuHandler
                 fibonacci.Run();
                 break;
             case AssignmentThreeTasks.ObjectOrientedPractice:
-                // var oopPractice = new ObjectOrientedPractice();
-                // oopPractice.Run();
+                var oopPractice = new ObjectOrientedPractice();
+                oopPractice.Run();
                 break;
             case AssignmentThreeTasks.ColorAndBallTorture:
                 // var colorAndBall = new ColorAndBallTorture();
