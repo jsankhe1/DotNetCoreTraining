@@ -15,6 +15,7 @@ public class Course
         if (!Students.Contains(student))
         {
             Students.Add(student);
+            
             student.EnrollCourse(this);
         }
     }
