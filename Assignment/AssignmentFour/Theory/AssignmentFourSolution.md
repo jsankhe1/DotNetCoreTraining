@@ -39,7 +39,7 @@ List<string> stringList = new List<string>();
 > - `.RemoveAt(index)` will remove the item at specified index, can throw `ArgumentOutOfRangeException`
 >
 7. How do you indicate that a class has a generic type parameter?
-> - A class can me marked with <T> after class name to indicate it has a generic type param.
+> - A class can me marked with `<T>` after class name to indicate it has a generic type param.
 > - The syntax is Angle brackets, with a T enclosed within.
 > - T is the placeholder for the type that will be decided at compile Time
 >
