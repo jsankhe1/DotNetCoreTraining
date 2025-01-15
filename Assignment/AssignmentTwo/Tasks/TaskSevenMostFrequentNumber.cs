@@ -6,10 +6,26 @@ public class TaskSevenMostFrequentNumber
     public void DemoMostFrequentNumber()
     {
         // Step 1: Read the input array
-        Console.WriteLine("Enter the array (space-separated integers):");
-        string[] input = Console.ReadLine().Split(' ');
-        int[] array = Array.ConvertAll(input, int.Parse);
+        // Refactored code, adding try catch finally
+        int[] array = null;
+        while (array == null)
+        try
+        {
+            Console.WriteLine("Enter the array (space-separated integers):");
+            string[] input = Console.ReadLine().Split(' ');
 
+            // Validate and convert input to an integer array
+            array = Array.ConvertAll(input, int.Parse);
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Invalid input. Please enter space-separated integers.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred: {ex.Message}");
+        }
+        
         Dictionary<int, int> frequencyMap = new Dictionary<int, int>();
 
         int mostFrequentNumber = array[0];

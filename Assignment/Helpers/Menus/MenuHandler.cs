@@ -11,7 +11,17 @@ namespace Assignment.Helpers;
 
 public class MenuHandler
 {
+    public static void DisplayMenu<TEnum>() where TEnum : Enum
+    {
+        Console.WriteLine($"\n=== {typeof(TEnum).Name} Menu ===");
+        foreach (var value in Enum.GetValues(typeof(TEnum)))
+        {
+            Console.WriteLine($"{(int)value}. {value}");
+        }
 
+        Console.WriteLine("===========================");
+        Console.WriteLine("Enter Your Choice: ");
+    }
 
     public static void DisplayMenuPrime()
     {
@@ -90,12 +100,12 @@ public class MenuHandler
                 var assignmentTwoDashboard = new AssignmentTwoDashboard();
                 assignmentTwoDashboard.Run();
                 break;
-            
+
             case PrimeAssignment.AssignmentThree:
                 var assignmentThreeDashboard = new AssignmentThreeDashboard();
                 assignmentThreeDashboard.Run();
                 break;
-                
+
             default: break;
         }
     }
